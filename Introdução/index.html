@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT</title>
+</head>
+<body>
+    <h1>Introdução</h1>
+    <p>O Git é um sistema de controle de versão popular. Foi criado por Linus Torvalds em 2005, e tem sido mantido por Junio Hamano desde então.</p>
+
+    <p>É usado para:</p>
+
+    <ul>
+        <li>Alterações de código de acompanhamento</li>
+        <li>Rastreando quem fez alterações</li>
+        <li>Colaboração de codificação</li>
+    </ul>
+
+    <p>O que o Git faz?</p>
+
+    <ul>
+        <li>Gerenciar projetos com repositórios</li>
+        <li>Clonar um projeto para trabalhar em uma cópia local</li>
+        <li>Controle e controle as alterações com a preparação e a confirmação</li>
+        <li>Ramificação e mesclagem para permitir o trabalho em diferentes partes e versões de um projeto</li>
+        <li>Efetuar pull da versão mais recente do projeto para uma cópia local</li>
+        <li>Enviar atualizações locais para o projeto principal</li>
+    </ul>
+
+    <h2>Instalação do Git</h2>
+    <p>Você pode baixar o Git gratuitamente no seguinte site: <a href="https://www.git-scm.com/" target="_blank">https://www.git-scm.com/</a></p>
+
+    <p>verificando se o GIT está instalado</p>
+    <pre>
+        <code>git --version</code>
+    </pre>
+
+    <h2>Configurar o Git</h2>
+    <p>Agora deixe o Git saber quem você é. Isso é importante para sistemas de controle de versão, como cada commit do Git usa essas informações:</p>
+
+    <pre>
+        <code>git config --global user.name "test"
+        git config --global user.email "test@email.com"</code>
+    </pre>
+
+    <p>Altere o nome de usuário e o endereço de e-mail para o seu. Você provavelmente também desejará usar isso ao se registrar no GitHub mais tarde.</p>
+    <p>Use global para definir o nome de usuário e o e-mail para cada repositório em seu computador. Se você quiser definir o nome de usuário/e-mail apenas para o repositório atual, poderá remover global.</p>
+
+    <h2>Incializando o GIT</h2>
+    <p>você pode inicializar o Git</p>
+    <pre>
+        <code>git init</code>
+    </pre>
+
+    <p>Verificar estatus do repositório</p>
+    <pre>
+        <code>git status</code>
+    </pre>
+
+    <p>Os arquivos na pasta do repositório Git podem estar em um dos 2 estados:</p>
+
+    <ul>
+        <li>Rastreados - arquivos que o Git conhece e são adicionados ao repositório</li>
+        <li>Não rastreados - arquivos que estão em seu diretório de trabalho, mas não adicionados ao diretório repositório</li>
+    </ul>
+    <p>Quando você adiciona arquivos a um repositório vazio pela primeira vez, todos eles são não rastreado. Para que o Git os rastreie, você precisa prepará-los ou adicioná-los ao ambiente de preparo.</p>
+</body>
+</html>
