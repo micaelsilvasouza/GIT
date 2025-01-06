@@ -20,6 +20,12 @@
         <code>git commit -m "message"</code>
     </pre>
     <p>Ao adicionar mensagens claras a cada um, é fácil para você (e para os outros) para ver o que mudou e quando.</p>
-    <p></p>
+    <p>Às vezes, quando você faz pequenas alterações, usar o ambiente de teste parece uma perda de tempo. É possível confirmar as alterações diretamente, ignorando o ambiente de preparo. A opção -a irá encenar automaticamente cada alterado, arquivo já rastreado.</p>
+
+    <pre>
+        <code>git commit -a -m "Updated index.html with a new line"</code>
+    </pre>
+
+    <p>Ignorar o ambiente de preparo geralmente não é recomendado. Às vezes, pular a etapa do estágio pode fazer com que você inclua alterações indesejadas.</p>
 </body>
 </html>
