@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT</title>
+</head>
+<body>
+    <h1>Trabalhando com ramificações do Git</h1>
+    <p>No Git, um branch é uma versão nova/separada do repositório principal.</p>
+    <p>
+        As ramificações permitem que você trabalhe em diferentes partes de um projeto sem afetar o ramo principal.
+        <br>
+        Quando o trabalho estiver concluído, uma ramificação poderá ser mesclada com o projeto principal.
+        <br>
+        Você pode até alternar entre ramificações e trabalhar em diferentes projetos sem eles interferindo uns com os outros.
+    </p>
+
+    <pre>
+        <code>git branch [name-branch]</code>
+    </pre>
+
+    <p>checkout é o comando usado para fazer check-out de um arquivo . Movendo-nos do atual , para o especificado no final do comando</p>
+    <p>Agora movemos nosso espaço de trabalho atual do branch master para o novo branch.</p>
+    <pre>
+        <code>git checkout</code>
+    </pre>
+
+    <p>
+        Agora imagine que ainda não terminamos com novo branch, mas precisamos corrigir um erro no master.
+        <br>   
+        Eu não quero mexer com o mestre diretamente, e eu não quero mexer com hello-world-images, uma vez que ainda não está pronto.
+        <br>  
+        Por isso, criamos uma nova filial para lidar com a emergência:
+    </p>
+
+    <pre>
+        <code>git checkout -b [name-new-branch]</code>
+    </pre>
+
+    <p>Agora criamos um novo branch do master e mudamos para ele. Nós podemos Corrija o erro com segurança sem perturbar as outras ramificações.</p>
+
+    <h2>Mesclar ramificações</h2>
+    <p>Primeiro, precisamos mudar para o branch master, e mesclamos o branch atual (master) com emergency-fix</p>
+    <pre>
+        <code>git checkout master
+        git marge [name-branch]</code>
+    </pre>
+
+    <p>Como o novo branch veio diretamente do master e nenhuma outra alteração foi feita no master enquanto estávamos trabalhando, o Git vê isso como uma continuação do master. Portanto, ele pode "avançar rapidamente", apenas apontando master e o novo branch para o mesmo commit.</p>
+    <p>Como master e o novo branch são essencialmente os mesmos agora, podemos excluir emergency-fix, pois não é mais necessário</p>
+    <pre>
+        <code>git branch -d [name-branch]</code>
+    </pre>
+</body>
+</html>
