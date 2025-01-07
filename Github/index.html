@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT</title>
+</head>
+<body>
+    <h1>GitHub</h1>
+    <p>Acesse o <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer">https://www.github.com/</a> e inscreva-se em uma conta, lembre-se de usar o mesmo endereço de email usado na configuração do Git.</p>
+    <p>Agora que você criou uma conta do GitHub, entre e crie um novo repositório.</p>
+
+    <h2>Enviar o repositório local para o GitHub</h2>
+    <p>Como já configuramos um repositório Git local, vamos para push o GitHub.</p>
+    <pre>
+        <code>git remote add origin https://github.com/w3schools-test/hello-world.git</code>
+    </pre>
+    <p>Copie o URL ou clique na área de transferência.</p>
+    <p>Especifica que você está adicionando um repositório remoto, com o especificado , como um para o repositório Git local.</p>
+
+    <p>Agora vamos enviar nosso branch master para a url de origem e defini-lo como o branch remoto padrão.</p>
+    <pre>
+        <code>git push --set-upstream origin master</code>
+    </pre>
+
+    <h2>Puxando para se manter atualizado com as alterações</h2>
+    <p>Sempre que você começar a trabalhar em um projeto, deverá obter o mais recente alterações em sua cópia local.</p>
+    <p>O pull é usado para extrair todas as alterações de um repositório remoto no branch em que você está trabalhando.</p>
+    <pre>
+        <code>git pull origin</code>
+    </pre>
+    <p>É assim que você mantém seu Git local atualizado a partir de um repositório remoto.</p>
+
+    <p>Agora envie nossas alterações para nossa origem remota:</p>
+    <pre>
+        <code>git push origin</code>
+    </pre>
+</body>
+</html>
